@@ -1,0 +1,166 @@
+/*
+  File: A7/css/styles.css
+  91.461 Assignment 7: Creating a Single-Page Navigation Interface
+  Name: Brian Chiang
+  School: UMass Lowell Computer Science
+  Email: brian_chiang@student.uml.edu
+  Created: November 6, 2014 at 4:00 PM
+  Purpose: This is an updated style sheet for the pages created for assignment 7.
+*/
+
+/* Configure page layout. */
+html {
+    padding-top: 25px;
+}
+
+/* Configure <body> layout. */
+body {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #eee9e9;
+}
+
+/* The following code for different font formats was taken from the textbook. */
+/* Normal font type. */
+@font-face {
+    font-family: "Quicksand";
+    src: url('fonts/quicksand-regular-webfont.eot');
+    src: url('fonts/quicksand-regular-webfont.woff') format('woff'),
+         url('fonts/quicksand-regular-webfont.ttf') format('truetype'),
+         url('fonts/quicksand-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Italic font type. */
+@font-face {
+    font-family: "Quicksand";
+    src: url('fonts/quicksand-italic-webfont.eot');
+    src: url('fonts/quicksand-italic-webfont.woff') format('woff'),
+         url('fonts/quicksand-italic-webfont.ttf') format('truetype'),
+         url('fonts/quicksand-italic-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Bold font type. */
+@font-face {
+    font-family: "Quicksand";
+    src: url('fonts/quicksand-bold-webfont.eot');
+    src: url('fonts/quicksand-bold-webfont.woff') format('woff'),
+         url('fonts/quicksand-bold-webfont.ttf') format('truetype'),
+         url('fonts/quicksand-bold-webfont.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Bold and italic font type. */
+@font-face {
+    font-family: "Quicksand";
+    src: url('fonts/quicksand-bolditalic-webfont.eot');
+    src: url('fonts/quicksand-bolditalic-webfont.woff') format('woff'),
+         url('fonts/quicksand-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/quicksand-bolditalic-webfont.svg') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Display large text at center of page with shadow effect. */
+.title {
+    font-size: 135px;
+    text-shadow: -4px 4px 3px #666, 1px -1px 2px #000;
+    color: white;
+    text-align: center;
+}
+
+/* Format "center" class. */
+.center {
+    text-align: center;
+}
+
+/* Format paragraphs. */
+p {
+    font-family: "Quicksand";
+    color: black;
+    width: 65%
+}
+
+/* Stylize the navigation bar. */
+nav {
+  text-align: center;
+}
+
+/* Stylize nav list items. */
+nav li {
+  display: inline-block;
+}
+
+
+/* Stylize the "container" class. */
+.container {
+  margin-bottom: 2%;
+}
+
+/* Stylize links in "container" class. */
+.container a {
+  border: 2px solid;
+  border-color: #eee9e9;
+}
+
+/* Style how links in "container" class are displayed when hovered over. */
+.container a:hover {
+  color: #8b4513;
+}
+
+/* Style how links in "container" class are displayed when active. */
+.container a:active {
+  border-color: #8b4513;
+}
+
+/* Change following characters to large capital uppercase. */
+/* Magnifies the effect of "small-caps". */
+.toupper {
+    color: #8b4513;
+    font-size: 35px;
+    font-variant: small-caps;
+}
+
+/* Change following characters to small capital case. */
+.tolower {
+    color: #8b4513;
+    font-size: 23px;
+    font-variant: small-caps;
+}
+
+/* Format "header" class. */
+.header {
+    display: inline-block;
+    border: solid 1px black;
+}
+
+/* Format "ol" items. */
+ol {
+    list-style-type: lower-roman;
+    font-family: "Quicksand";
+}
+
+/* Format "ul" items. */
+ul {
+    list-style-type: square;
+    font-family: "Quicksand";
+}
+
+/* Format "book" class. */
+.book {
+    color: #8b4513;
+}
+
+/* Format "quote" class. */
+.quote {
+    font-family: "Quicksand";
+    letter-spacing: -1px;
+    line-height: .95;
+    text-indent: 50px;
+    font-weight: bold;
+    font-style: italic;
+}

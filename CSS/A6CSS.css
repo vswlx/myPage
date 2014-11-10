@@ -1,0 +1,153 @@
+/*
+  File: CSS/A6CSS.css
+  91.461 Assignment 6: Creating an Interactive Table
+  Name: Brian Chiang
+  School: UMass Lowell, Computer Science
+  Email: brian_chiang@student.uml.edu
+  Created: October 23, 6:00 PM
+  Purpose: This is the CSS style sheet used to stylize the single page application.
+*/
+
+/* Format normal font type. */
+@font-face {
+    font-family: "Quicksand";
+    src: url('../fonts/quicksand-regular-webfont.eot');
+    src: url('../fonts/quicksand-regular-webfont.woff') format('woff'),
+         url('../fonts/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Format italic font type. */
+@font-face {
+    font-family: "Quicksand";
+    src: url('../fonts/quicksand-italic-webfont.eot');
+    src: url('../fonts/quicksand-italic-webfont.woff') format('woff'),
+         url('../fonts/quicksand-italic-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand-italic-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Format bold font type. */
+@font-face {
+    font-family: "Quicksand";
+    src: url('../fonts/quicksand-bold-webfont.eot');
+    src: url('../fonts/quicksand-bold-webfont.woff') format('woff'),
+         url('../fonts/quicksand-bold-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand-bold-webfont.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Format bold & italic font type. */
+@font-face {
+    font-family: "Quicksand";
+    src: url('../fonts/quicksand-bolditalic-webfont.eot');
+    src: url('../fonts/quicksand-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/quicksand-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand-bolditalic-webfont.svg') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Format the table. */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 2px;
+}
+
+/* Format the products of the table. */
+td {
+    font-family: "Quicksand";
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* Format the first column of multipliers. */
+td:first-child {
+    background-color: #DAD4D4;
+    font-weight: bold;
+}
+
+/* Format the top row of table. */
+th {
+    font-family: "Quicksand";
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #DAD4D4;
+}
+
+/* "Hide" the first cell that won't be used. */
+th:first-child {
+    background-color: white;
+    border: none;
+}
+
+/* Format the instructions given to the user at the top of the page. */
+.instructions {
+    font-family: "Quicksand";
+    text-align: center;
+    font-size: 25px;
+    margin-top: 1%;
+}
+
+/* Format the forms that the user will use to input numbers. */
+.form {
+    float: left;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 47.4%;
+    margin-right: 50%;
+    margin-bottom: 15px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: #DAD4D4;
+}
+
+/* Format the first paragraph in the instructions. */
+.topBorder {
+    border-top: 2px solid black;
+    padding-top: 0;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: -20px;
+    background-color: #DAD4D4;
+}
+
+/* Format the second paragraph in the instructions. */
+.bottomBorder {
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: -20px;
+    background-color: #DAD4D4;
+}
+
+/* Format all paragraphs used. */
+p {
+    font-family: "Quicksand";
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* Format the "ENTER" button. */
+.submitButton {
+    text-align: center;
+}
+
+/* Format error messages. */
+.error {
+    text-align: center;
+}
